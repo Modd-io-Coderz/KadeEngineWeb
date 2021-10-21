@@ -9,7 +9,7 @@ clone_folder: /home/appveyor/site
 environment:
   HAXELIB_ROOT: /home/appveyor/haxelib
   HAXE_INSTALLDIR: /home/appveyor/haxe
-  SRC_REPO: https://github.com/KadeDev/Kade-Engine.git
+  SRC_REPO: https://github.com/ShadowMario/FNF-PsychEngine.git
   GITHUB_ACCESS_TOKEN:
     secure: /iJkmlKYPjeG0o1YoGSpn+NANPJMrCZ6dic5w/12wRiInp+y22kAAXsPkEwBJzHS
 
@@ -48,8 +48,8 @@ build_script:
   - cd /home/appveyor/site
   - git config --global credential.helper store
   - printf "https://$GITHUB_ACCESS_TOKEN:x-oauth-basic@github.com\n" > $HOME/.git-credentials
-  - git config --global user.email "hi@puyo.xyz"
-  - git config --global user.name "puyoxyz"
+  - git config --global user.email "kidwillyk@outlook.com"
+  - git config --global user.name "OriginalRagdev"
   - cd /home/appveyor/src
   - haxelib run lime build html5
   - cd /home/appveyor/site
